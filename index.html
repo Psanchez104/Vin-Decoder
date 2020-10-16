@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIN Decoder</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="icon-container">
+          <canvas id="icon" width="100" height="100"></canvas>
+        </div>
+      </div>
+      <h1 class="title">VIN Decoder</h1>
+      <form class="input" id="form">
+        <input type="text" id="vin" placeholder="Enter vin here" />
+        <button type="submit">Submit</button>
+      </form>
+      <div class="info">
+        <div class="item">
+          <div class="data-title">Make:</div>
+          <div class="data" id="make"></div>
+        </div>
+        <div class="item">
+          <div class="data-title">Model:</div>
+          <div class="data" id="model"></div>
+        </div>
+        <div class="item">
+          <div class="data-title">Year:</div>
+          <div class="data" id="year"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
