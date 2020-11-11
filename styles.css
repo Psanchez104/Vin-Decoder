@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --color-one: #fc5185;
+  --color-two: #364f6b;
+  --color-three: #43dde6;
+  --color-four: #f0f0f0;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+body {
+  background: linear-gradient(to right, var(--color-three), #3a88f2);
+}
+body .container {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 10vh;
+  min-height: 80vh;
+}
+.title {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 42px;
+  margin-bottom: 6vh;
+  font-weight: 100;
+}
+.input {
+  display: flex;
+  justify-content: space-around;
+}
+.input input {
+  width: 65%;
+}
+.input button {
+  background-color: var(--color-one);
+  border: none;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 4px;
+  padding: 8px;
+}
+.input button:hover {
+  transform: scale(1.1);
+}
+.info {
+  margin-top: 24px;
+  font-size: 24px;
+  padding: 5% 25%;
+}
+.data-title {
+  text-align: left;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 75%;
+  }
+  #form {
+    min-height: 200px;
+  }
+  .input {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input input {
+    padding: 8px;
+  }
+}
