@@ -6,7 +6,7 @@ const model = document.getElementById("model");
 const year = document.getElementById("year");
 
 let apiData = {
-  url: "http://api.carmd.com/v3.0/decode?vin="
+  url: "https://api.carmd.com/v3.0/decode?vin="
 };
 
 form.addEventListener("submit", e => {
@@ -16,7 +16,7 @@ form.addEventListener("submit", e => {
   // console.log(apiUrl);
 
   year.innerHTML = fetch(
-    `http://api.carmd.com/v3.0/decode?vin=${currentVin.value}`,
+    `https://api.carmd.com/v3.0/decode?vin=${currentVin.value}`,
     {
       headers: {
         accept: "application/json",
